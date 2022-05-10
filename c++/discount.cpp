@@ -1,3 +1,8 @@
+// A shop will give discount of 10% if the cost of purchased quantity is more than 1000.
+// Ask user for quantity
+// Suppose, one unit will cost 100.
+// Judge and print total cost for user.
+
 #include<iostream>
 using namespace std;
  int main(){
@@ -5,11 +10,11 @@ using namespace std;
      cout<<"enter how much unit you want ? ";
      cin>>quantity;
     
-    price = 1000 * quantity;
+    price = 100 * quantity; //1unit = 100
 
      if (price > 1000)
      {
-         cout << "Total cost is " << 1000-(price * .1)<< endl;
+         cout << "Total cost is " << price-(price * .1)<< endl; //
      }
      else{
          cout << "cost without discount is " << price << endl;
